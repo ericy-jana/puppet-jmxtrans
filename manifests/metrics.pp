@@ -29,7 +29,7 @@
 # $ganglia              - host:port of Ganglia gmond.     Optional.
 # $ganglia_group_name   - Ganglia metrics group.          Optional.
 # $graphite             - host:port of Graphite server    Optional.
-# $graphite_root_prefix - rootPrefix for Graphite.        Optional.
+# $graphite_name_prefix - namePrefix for Graphite.        Optional.
 # $statsd               - host:port of statsd server      Optional.
 # $statsd_root_prefix   - rootPrefix for statsd.          Optional.
 # $outfile              - local file path in which to save metric query results.  Optional.
@@ -44,7 +44,7 @@ define jmxtrans::metrics(
     $ganglia              = undef,
     $ganglia_group_name   = undef,
     $graphite             = undef,
-    $graphite_root_prefix = undef,
+    $graphite_name_prefix = undef,
     $statsd               = undef,
     $statsd_root_prefix   = undef,
     $outfile              = undef,

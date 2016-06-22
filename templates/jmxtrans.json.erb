@@ -72,8 +72,8 @@ valid_statsd_settings  = ['bucketType']
 <%       if object.has_key? 'typeNames' -%>
               , "typeNames": <%= object['typeNames'].inspect %>
 <%       end -%>
-<%       if @graphite_root_prefix -%>
-              , "rootPrefix": "<%= @graphite_root_prefix %>"
+<%       if @graphite_name_prefix -%>
+              , "namePrefix": "<%= @graphite_name_prefix %>"
 <%       end -%>
               }
             }
